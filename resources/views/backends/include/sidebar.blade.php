@@ -27,17 +27,17 @@
             <hr>
             <ul class="row list-unstyled">
                 <li class="col-4">
-                    <small>News</small>
-                    <h6>{{ App\Models\News::count()}}</h6>
+                    <small>Blogs</small>
+                    <h6>Blogs</h6>
                 </li>
                 <li class="col-4">
                     <small>Users</small>
                     <h6>{{ App\Models\User::count()}}</h6>
                 </li>
-                {{-- <li class="col-4">
+                <li class="col-4">
                     <small>Auth News</small>
-                    <h6>{{ App\Models\News::count()->where('user_id',Auth::user()->id) s}}</h6>
-                </li> --}}
+                    <h6>12</h6>
+                </li>
             </ul>
         </div>
         <!-- Nav tabs -->
@@ -56,28 +56,6 @@
                             <a href="{{ route(auth()->user()->type) }}"><i class="icon-home"></i> <span>{{ __('Dashboard') }}</span></a>
                         </li>
                         <li>
-                            <a href="javascript:void(0)" class="has-arrow"><i class="fa fa-newspaper-o"></i> <span>News</span></a>
-                            <ul>
-                                <li><a href="{{ route('news') }}">News List</a></li>
-                                <li><a href="{{ route('create.news') }}">New Post</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)" class="has-arrow">
-                                <i class="fa fa-camera"></i> <span>Photo Story</span></a>
-                            <ul>
-                                <li><a href="{{ route('create.photo') }}">Add New</a></li>
-                                <li><a href="{{ route('photos') }}">Photos</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)" class="has-arrow"><i class="fa fa-video-camera"></i> <span>Video</span></a>
-                            <ul>
-                                <li><a href="{{ route('create.video') }}">Add New</a></li>
-                                <li><a href="{{ route('videos') }}">Videos</a></li>
-                            </ul>
-                        </li>
-                        <li>
                             <a href="javascript:void(0)" class="has-arrow"><i class="icon-list"></i> <span>{{ __('Category') }}</span></a>
                             <ul>
                                 <li><a href="{{ route('category') }}">{{ __('Category') }}</a></li>
@@ -85,20 +63,9 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="javascript:void(0)" class="has-arrow"><i class="icon-list"></i> <span>{{ __('Sub Category') }}</span></a>
-                            <ul>
-                                <li><a href="{{ route('subcategory') }}">{{ __('Sub Category') }}</a></li>
-                                <li><a href="{{ route('create.subcategory') }}">{{ __('Add New') }}</a></li>
-                            </ul>
-                        </li>
-                        <li>
                             <a href="javascript:void(0)" class="has-arrow"><i class="icon-grid"></i> <span>{{ __('User') }}</span></a>
                             <ul>
                                 <li><a href="{{ route('register') }}">New Auth</a></li>
-                                <li><a href="{{ route('usersList') }}">All User</a></li>
-                                <li><a href="{{ route('authors') }}">Authors</a></li>
-                                <li><a href="{{ route('teams') }}">Teams</a></li>
-                                <li><a href="{{ route('teachers') }}">Teachers</a></li>
                                 <li><a href="{{ route('users') }}">Users</a></li>
                             </ul>
                         </li>
@@ -108,15 +75,8 @@
             <div class="tab-pane p-l-15 p-r-15" id="Chat">
                 <ul class="list-unstyled question">
                     <li class="menu-heading">HOW-TO</li>
-                    
                     <li>
-                        <a href="{{ route('news') }}" class="has-arrow"><i class="fa fa-newspaper-o"></i> <span>News List</span></a>
-                    </li>
-                    <li>
-                        <a href="{{ route('news') }}" class="has-arrow"><i class="fa fa-newspaper-o"></i> <span>Probile News List</span></a>
-                    </li>
-                    <li>
-                        <a href="{{ route('news') }}" class="has-arrow"><i class="fa fa-newspaper-o"></i> <span>Reporter</span></a>
+                        <a href="#" class="has-arrow"><i class="fa fa-newspaper-o"></i> <span>News List</span></a>
                     </li>
                 </ul>
             </div>

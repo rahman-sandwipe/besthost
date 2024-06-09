@@ -30,7 +30,8 @@
             
 			<!-- Page Contents -->
 			@yield('main_contents')
-		</div>
+			</div>
+		@yield('register_contents')
 		<!-- Javascript -->
         @include('backends.include.scripts')
 		{{-- @include('backends.include.alert') --}}

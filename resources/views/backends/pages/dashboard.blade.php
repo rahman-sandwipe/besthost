@@ -15,10 +15,10 @@
                     </ul>
                 </div>
                 <div class="col-lg-7 col-md-4 col-sm-12 text-right">
-                    <a href="{{ route('create.news') }}" class="btn btn-success">
+                    <a href="" class="btn btn-success">
                         <span><i class="fa fa-newspaper-o"></i> Add News</span>
                     </a>
-                    <a href="{{ route('create.video') }}" class="btn btn-success">
+                    <a href="" class="btn btn-success">
                         <span><i class="fa fa-camera"></i> Add Video</span>
                     </a>
                     <a href="{{ route('register') }}" class="btn btn-success">
@@ -34,19 +34,7 @@
                         <div class="icon text-info"><i class="fa fa-user"></i> </div>
                         <div class="content">
                             <div class="text">Total User</div>
-                            <h5 class="number">{{ count($user) }}</h5>
-                        </div>
-                        <hr>
-                        <div class="icon text-warning"><i class="fa fa-user-circle"></i> </div>
-                        <div class="content">
-                            <div class="text">Active User</div>
-                            <h5 class="number">{{ count($activeUser) }}</h5>
-                        </div>
-                        <hr>
-                        <div class="icon text-warning"><i class="fa fa-user-circle"></i> </div>
-                        <div class="content">
-                            <div class="text">Inactive User</div>
-                            <h5 class="number">{{ count($inactiveUser) }}</h5>
+                            <h5 class="number">11</h5>
                         </div>
                     </div>
                 </div>
@@ -57,19 +45,7 @@
                         <div class="icon text-warning"><i class="fa fa-tags"></i> </div>
                         <div class="content">
                             <div class="text">Total News</div>
-                            <h5 class="number">{{ count($news) }}</h5>
-                        </div>
-                        <hr>
-                        <div class="icon"><i class="fa fa-graduation-cap"></i> </div>
-                        <div class="content">
-                            <div class="text">Public News</div>
-                            <h5 class="number">{{ count($publicNews) }}</h5>
-                        </div>
-                        <hr>
-                        <div class="icon"><i class="fa fa-graduation-cap"></i> </div>
-                        <div class="content">
-                            <div class="text">Unpublic News</div>
-                            <h5 class="number">{{ count($hideNews) }}</h5>
+                            <h5 class="number">12</h5>
                         </div>
                     </div>
                 </div>
@@ -80,19 +56,7 @@
                         <div class="icon text-danger"><i class="fa fa-credit-card"></i> </div>
                         <div class="content">
                             <div class="text">Videos</div>
-                            <h5 class="number">{{ count($Videos) }}</h5>
-                        </div>
-                        <hr>
-                        <div class="icon text-success"><i class="fa fa-university"></i> </div>
-                        <div class="content">
-                            <div class="text">Public</div>
-                            <h5 class="number">{{ count($publicVideos) }}</h5>
-                        </div>
-                        <hr>
-                        <div class="icon text-success"><i class="fa fa-university"></i> </div>
-                        <div class="content">
-                            <div class="text">Unpublic</div>
-                            <h5 class="number">{{ count($hideVideos) }}</h5>
+                            <h5 class="number">12</h5>
                         </div>
                     </div>
                 </div>
@@ -100,12 +64,6 @@
             <div class="col-lg-3 col-md-6">
                 <div class="card top_counter">
                     <div class="body">
-                        <div class="icon"><i class="fa fa-map-pin"></i> </div>
-                        <div class="content">
-                            <div class="text">Our Center</div>
-                            <h5 class="number">28</h5>
-                        </div>
-                        <hr>
                         <div class="icon text-success"><i class="fa fa-smile-o"></i> </div>
                         <div class="content">
                             <div class="text">Happy Clients</div>
