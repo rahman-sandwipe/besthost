@@ -1,80 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Meta Data -->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Larascripts | News Minimal Responsive Larascripts</title>
-        <meta name="description" content="Author: Md. Masuder Rahman, Template: HTML, Category: Blog, News">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="{{ asset('frontends/media/favicon.svg') }}">
-        @include('frontends.inc.style')
-        <!-- Site Stylesheet -->
-        <link rel="stylesheet" href="{{ asset('frontends/css/app.css') }}">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="author" content="Mironcoder">
+		<meta name="email" content="mironcoder@gmail.com">
+		<meta name="profile" content="https://themeforest.net/user/mironcoder">
+		<meta name="name" content="Domhost">
+		<meta name="description" content="Domhost - domain web hosting html template">
+		<meta name="keywords" content="domain, hosting, whmcs, hosting whmcs, whmcs template, hosting html, web hosting, hosting template, html hosting template, domain market, domain portfolio, domain listing, domain sale, domain broker, domain selling">
+		@yield('page_title')
+        @include('frontends.inc.styles')
+	</head>
+	<body>
+        
+        @include('frontends.inc.header')
 
-    </head>
+		@yield('main_contents')
 
-    <body class="mobilemenu-active">
-        {{-- <div id="preloader" class="preloader">
-            <div class="loader-wrap">
-                <div class="single-box">
-                    <div class="circle-holder"></div>
-                    <div class="shadow-holder"></div>
-                </div>
-                <div class="single-box">
-                    <div class="circle-holder"></div>
-                    <div class="shadow-holder"></div>
-                </div>
-                <div class="single-box">
-                    <div class="circle-holder"></div>
-                    <div class="shadow-holder"></div>
-                </div>
-                <div class="single-box">
-                    <div class="circle-holder"></div>
-                    <div class="shadow-holder"></div>
-                </div>
-            </div>
-        </div> --}}
-
-        <a href="#main-wrapper" id="backto-top" class="back-to-top" aria-label="Back To Top">
-            <i class="regular-direction-up"></i>
-        </a>
-
-        <div id="main-wrapper" class="main-wrapper">
-
-            <!--=====================================-->
-            <!--=        Header Area Start       	=-->
-            <!--=====================================-->
-            @include('frontends.inc.header')
-            
-            <!--=====================================-->
-            <!--=         Footer Area Start         =-->
-            <!--=====================================-->
-            @yield('front_layouts')
-
-            <!--=====================================-->
-            <!--=         Footer Area Start         =-->
-            <!--=====================================-->
-            @include('frontends.inc.footer')
-        </div>
-        <!-- Search Start -->
-        <div id="search-trigger" class="search-input-wrap">
-            <div class="container">
-                <button type="button" class="close">×</button>
-                <form class="search-form">
-                    <input type="search" value="" placeholder="Search" />
-                    <button type="submit" class="search-btn">
-                        <i class="regular-search-02"></i>
-                    </button>
-                </form>
-            </div>
-        </div>
-        <!-- Search End -->
-
-        <!-- Jquery Js -->
-        @include('frontends.inc.scripts')
-        <!-- Site Scripts -->
-        <script src="{{ asset('frontends/js/app.js') }}"></script>
-    </body>
+		@include('frontends.inc.footer')
+		@include('frontends.inc.scripts')
+	</body>
 </html>

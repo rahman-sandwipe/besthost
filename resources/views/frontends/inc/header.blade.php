@@ -1,202 +1,95 @@
-@php
-    $category=App\Models\Category::where('status','active')->latest()->get();
-@endphp
-<header class="header header3 sticky-on">
-    <div id="topbar-wrap">
-        <div class="topbar-global color-dark-1-fixed">
-            <div class="container">
-                <div class="d-flex align-items-center justify-content-between gap-1">
-                    <div class="social-layout-1">
-                        <label class="d-none d-lg-block">Follow Us</label>
-                        <ul class="inline-list">
-                            <li class="single-item"><a aria-label="Learn more from Facebook" href="#" title="facebook"><i class="solid-facebook2"></i></a></li>
-                            <li class="single-item"><a aria-label="Learn more from Linkedln" href="#" title="linkedln"><i class="solid-linkedln"></i></a></li>
-                            <li class="single-item"><a aria-label="Learn more from Mail Fast" href="#" title="mail-fast"><i class="regular-mail-fast"></i></a></li>
-                            <li class="single-item"><a aria-label="Learn more from Youtube" href="#" title="youtube"><i class="solid-youtube"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="d-flex align-items-center gap-4">
-                        <div class="current-date d-lg-block d-none">July 5, 2023</div>
-                        <div class="d-flex align-items-center gap-2">
-                            <div class="my_switcher">
-                                <ul>
-                                    <li title="Light Mode">
-                                        <button type="button" aria-label="Light" class="setColor light" data-theme="light">
-                                            <i class="solid-light-mode"></i>
-                                        </button>
-                                    </li>
-                                    <li title="Dark Mode">
-                                        <button type="button" aria-label="Dark" class="setColor dark" data-theme="dark">
-                                            <i class="solid-half-moon"></i>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                            {{-- <div class="notification-wrap dropdown-item-wrap">
-                                <div class="navbar navbar-expand-md">
-                                    <div class="dropdown">
-                                        <a class="dropdown-toggle has-notification" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Notification">
-                                            <span class="icon-holder"><i class="regular-notification-011"></i></span>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-end animate slideIn" aria-labelledby="navbarDropdown1">
-                                            <div class="dropdown-menu-inner">
-                                                <label class="article-number">Recent Articles (10)</label>
-                                                <div class="item-wrap">
-                                                    <a href="post-format-default.html" class="notification-item">
-                                                        <div class="post-box">
-                                                            <div class="figure-holder radius-default img-height-100">
-                                                                <img width="540" height="600" src="assets/media/blog/post93.webp" alt="Post">
-                                                            </div>
-                                                            <div class="content-holder">
-                                                                <h3 class="entry-title color-dark-1 h3-extra-small">Could The Complement Our Digit.</h3>
-                                                                <ul class="entry-meta color-dark-1">
-                                                                    <li>
-                                                                        <i class="regular-clock-circle"></i>3 min read
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                    <a href="post-format-default.html" class="notification-item">
-                                                        <div class="post-box">
-                                                            <div class="figure-holder radius-default img-height-100">
-                                                                <img width="540" height="600" src="assets/media/blog/post94.webp" alt="Post">
-                                                            </div>
-                                                            <div class="content-holder">
-                                                                <h3 class="entry-title color-dark-1 h3-extra-small">On August 15th, an alarming email popped.</h3>
-                                                                <ul class="entry-meta color-dark-1">
-                                                                    <li>
-                                                                        <i class="regular-clock-circle"></i>8 min read
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                    <a href="post-format-default.html" class="notification-item">
-                                                        <div class="post-box">
-                                                            <div class="figure-holder radius-default img-height-100">
-                                                                <img width="540" height="600" src="assets/media/blog/post95.webp" alt="Post">
-                                                            </div>
-                                                            <div class="content-holder">
-                                                                <h3 class="entry-title color-dark-1 h3-extra-small">Nam eget lorem mattis, consequat felis quis, luctus augue.</h3>
-                                                                <ul class="entry-meta color-dark-1">
-                                                                    <li>
-                                                                        <i class="regular-clock-circle"></i>3 min read
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <div class="notification-btn-wrap">
-                                                    <a href="archive.html" class="w-100 axil-btn axil-btn-ghost btn-color-alter axil-btn-small">View All
-                                                        <div class="icon-holder"><i class="regular-arrow-right"></i></div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> --}}
-                        </div>
-                    </div>
+<div class="header-top">
+    <div class="container">
+        <div class="header-top-content">
+            <div class="header-info-group"><a href="#" class="header-info"><i class="fas fa-phone-alt"></i><span>0209-4215-5596</span></a><a href="#" class="header-info"><i class="fas fa-envelope"></i><span>info@domhost.com</span></a><a href="#" class="header-info"><i class="fas fa-comments"></i><span>Live Chatting</span></a></div>
+            <div class="header-select-group">
+                <div class="header-select">
+                    <i class="fas fa-flag"></i>
+                    <select class="select">
+                        <option value="english" selected>english - USA</option>
+                        <option value="bangali">bangali - BD</option>
+                        <option value="arabic">arabic - SA</option>
+                    </select>
+                </div>
+                <div class="header-select">
+                    <i class="fas fa-globe"></i>
+                    <select class="select">
+                        <option value="english" selected>doller - $USD</option>
+                        <option value="bangali">pound - £GBP</option>
+                        <option value="arabic">euro - €EUR</option>
+                    </select>
                 </div>
             </div>
         </div>
     </div>
-    <div id="sticky-placeholder"></div>
-    <div id="navbar-wrap" class="navbar-wrap">
-        <div class="container">
-            <div class="d-flex align-items-center justify-content-between">
-                <div class="d-md-block d-none">
-                    <a href="index.html" class="link-wrap desktop-logo img-height-100" aria-label="Site Logo"><img width="131" height="47" src="assets/media/logo-dark.svg" alt="logo"></a>
-                </div>
-                <div class="d-md-none d-block">
-                    <a href="index.html" class="link-wrap mobile-logo img-height-100" aria-label="Site Logo"><img width="86" height="31" src="assets/media/mobile-logo.svg" alt="logo"></a>
-                </div>
-                <!-- Start Mainmenu Nav -->
-                <div id="mobilemenu-popup" class="offcanvas mobile-menu-wrap">
-                    <div class="mobile-logo-wrap d-lg-none d-block">
-                        <div class="logo-holder">
-                            <a href="index.html" class="link-wrap single-logo light-mode img-height-100" aria-label="Site Logo"><img width="131" height="47" src="assets/media/logo-dark.svg" alt="logo"></a>
-                            <a href="index.html" class="link-wrap single-logo dark-mode img-height-100" aria-label="Site Logo"><img width="131" height="47" src="assets/media/logo-light.svg" alt="logo" aria-label="Site Logo"></a>
-                        </div>
-                        <button aria-label="Offcanvas" type="button" class="mobile-close" data-bs-dismiss="offcanvas"><i class="regular-multiply-circle"></i></button>
-                    </div>
-                    <nav id="dropdown" class="template-main-menu">
-                        <ul class="menu">
-                            <li class="menu-item">
-                                <a href="{{ route('home') }}">প্রচ্ছদ</a>
-                            </li>
-                            @foreach ($category as $item)
-                                @php
-                                    $subcategory=App\Models\Subcategory::with('category')->where(['status'=>'active','cat_id'=>$item->id])->latest()->get();
-                                @endphp
-                                <li class="menu-item @if(count($subcategory)>0) menu-item-has-children @endif">
-                                    <a href="#">{{ $item->name }}</a>
-                                    @if(count($subcategory)>0)
-                                    <ul class="sub-menu">
-                                        @foreach ($subcategory as $item)
-                                            <li class="menu-item"><a href="index.html">{{ $item->name }}</a></li>
-                                        @endforeach
-                                    </ul>
-                                    @endif
-                                </li>
-                            @endforeach
+</div>
+<header class="header-part">
+    <div class="container">
+        <div class="header-nav-content">
+            <a href="index.html" class="header-logo"><img src="images/logo-white.png" alt="logo"></a>
+            <nav class="nav-sidebar">
+                <div class="nav-header"><a href="#"><img src="images/logo-black.png" alt="logo"></a><button class="nav-close"><i class="flaticon-cancel-1"></i></button></div>
+                <ul class="navbar-list">
+                    <li class="navbar-item dropdown">
+                        <a class="navbar-link" href="#">home</a>
+                        <ul class="dropdown-list">
+                            <li class="dropdown-item"><a href="index.html" class="dropdown-link">home index</a></li>
+                            <li class="dropdown-item"><a href="home-creative.html" class="dropdown-link">home creative</a></li>
+                            <li class="dropdown-item"><a href="home-standard.html" class="dropdown-link">home standard</a></li>
                         </ul>
-                    </nav>
+                    </li>
+                    <li class="navbar-item dropdown">
+                        <a href="#" class="navbar-link">domains</a>
+                        <ul class="dropdown-list">
+                            <li class="dropdown-item"><a href="domain-search.html" class="dropdown-link">domain search</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar-item dropdown">
+                        <a href="#" class="navbar-link">hosting</a>
+                        <ul class="dropdown-list">
+                            <li class="dropdown-item"><a href="cloud-hosting.html" class="dropdown-link">cloud hosting</a></li>
+                            <li class="dropdown-item"><a href="shared-hosting.html" class="dropdown-link">shared hosting</a></li>
+                            <li class="dropdown-item"><a href="reseller-hosting.html" class="dropdown-link">reseller hosting</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar-item dropdown">
+                        <a href="#" class="navbar-link">pages</a>
+                        <ul class="dropdown-list">
+                            <li class="dropdown-item dropdown">
+                                <a href="#" class="dropdown-link">shop</a>
+                                <ul class="dropdown-list">
+                                    <li class="dropdown-item"><a href="cartlist.html" class="dropdown-link">cartlist</a></li>
+                                    <li class="dropdown-item"><a href="checkout.html" class="dropdown-link">checkout</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-item"><a href="about-us.html" class="dropdown-link">about us</a></li>
+                            <li class="dropdown-item"><a href="pricing-plan.html" class="dropdown-link">pricing plan</a></li>
+                            <li class="dropdown-item"><a href="faqs.html" class="dropdown-link">faqs</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar-item dropdown">
+                        <a href="#" class="navbar-link">blogs</a>
+                        <ul class="dropdown-list">
+                            <li class="dropdown-item"><a href="blog-list.html" class="dropdown-link">blog list</a></li>
+                            <li class="dropdown-item"><a href="blog-details.html" class="dropdown-link">blog details</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar-item"><a href="contact.html" class="navbar-link">contact</a></li>
+                </ul>
+                <div class="nav-footer">
+                    <p>&copy; All Rights Reserved by <a href="#">Mironcoder</a></p>
                 </div>
-                <!-- End Mainmanu Nav -->
-                <div class="d-flex align-items-center gap-3">
-                    <div class="search-trigger-wrap">
-                        <a href="#search-trigger" title="search">
-                            <i class="regular-search-02"></i>
-                        </a>
-                    </div>
-                    <div class="profile-wrap dropdown-item-wrap">
-                        <div class="navbar navbar-expand-md">
-                            <div class="dropdown">
-                                <a class="dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Profile">
-                                    <span class="thumble-holder img-height-100"><img width="40" height="40" src="assets/media/blog/profile4.webp" alt="Profile"></span>
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-end animate slideIn" aria-labelledby="navbarDropdown2">
-                                    <div class="dropdown-menu-inner">
-                                        <div class="profile-content with-icon">
-                                            <ul>
-                                                <li><a href="author.html">
-                                                        <div class="icon-holder"><i class="regular-user"></i></div>Profile
-                                                    </a></li>
-                                                <li><a href="author.html">
-                                                        <div class="icon-holder"><i class="regular-activity"></i></div>Activity Log
-                                                    </a></li>
-                                                <li><a href="author.html">
-                                                        <div class="icon-holder"><i class="regular-plus-rectangle"></i></div>Library
-                                                    </a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="profile-content">
-                                            <ul>
-                                                <li><a href="author.html">Become a Member</a></li>
-                                                <li><a href="author.html">Apply for author verification</a></li>
-                                                <li><a href="author.html">Settings</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="mt-3">
-                                            <a href="#" class="w-100 axil-btn axil-btn-ghost btn-color-alter axil-btn-small">Sign Out</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mobile-menu-btn d-lg-none d-block">
-                        <button aria-label="Offcanvas" class="btn-wrap" data-bs-toggle="offcanvas" data-bs-target="#mobilemenu-popup">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </button>
-                    </div>
+            </nav>
+            <div class="header-widget-group">
+                <div class="header-profile">
+                    <a href="#" class="header-user"><img src="images/user.png" alt="user"><span>join</span><i class="fas fa-chevron-down"></i></a>
+                    <ul class="user-dropdown">
+                        <li><a href="login.html"><i class="fas fa-unlock"></i>login</a></li>
+                        <li><a href="register.html"><i class="fas fa-user-edit"></i>register</a></li>
+                        <li><a href="forgot-password.html"><i class="fas fa-question-circle"></i>forgot password</a></li>
+                    </ul>
                 </div>
+                <div class="header-widget"><a href="cartlist.html" class="header-cart"><i class="flaticon-shopping-bag"></i><sup>0</sup></a><button class="header-menu"><i class="flaticon-align-right"></i></button></div>
             </div>
         </div>
     </div>

@@ -1,307 +1,746 @@
 @extends('frontends.master')
-@section('front_layouts')
-<!--=====================================-->
-<!--=          Post Area Start          =-->
-<!--=====================================-->
-<section class="post-wrap-layout9 space-top-50 bg-color-light-1 transition-default">
+@section('page_title')
+    <title>Home - DB Best Host</title>
+@endsection
+@section('main_contents')
+<section class="banner-part section-mb-120">
     <div class="container">
-        <div class="multi-posts-layout2">
-            <div class="row g-4">
-                <div class="col-lg-3 col-12 order-lg-2">
-                    <div class="d-flex align-items-center h-100">
-                        <ul class="nav nav-tabs">
-                            @foreach ($getLeads as $row)
-                            <li class="nav-item">
-                                <a class="nav-link active" data-bs-toggle="tab" href="#one">
-                                    <span>{{ $row->headline }}</span>
-                                </a>
-                            </li>
-                            @endforeach
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-9 col-12 order-lg-1">
-                    <div class="tab-content h-100">
-                        <div class="tab-pane fade h-100 active show" id="one">
-                            <div class="post-box-layout13 box-border-dark-1 radius-default padding-20 bg-color-scandal box-shadow-large shadow-style-2 transition-default">
-                                <div class="figure-holder radius-default">
-                                    <a href="post-format-default.html" class="link-wrap img-height-100">
-                                        <img width="660" height="596" src="{{ asset($getSpecials->thumbnail) }}" alt="Post">
+        <div class="row align-items-center">
+            <div class="col-lg-7">
+                <div class="banner-content">
+                    <h1>find your perfect domain name</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, ullam sapiente! Sapiente molestias consectetur, quaerat, numquam modi obcaecati recusandae officiis quo libero</p>
+                    <ul class="nav nav-tabs plan-tabs banner-tabs">
+                        <li><a href="#register" class="tab-link active" data-bs-toggle="tab"><i class="fas fa-user-edit"></i><span>register</span></a></li>
+                        <li><a href="#transfer" class="tab-link" data-bs-toggle="tab"><i class="fas fa-random"></i><span>Transfer</span></a></li>
+                    </ul>
+                    <div class="tab-pane fade show active" id="register">
+                        <form class="banner-form">
+                            <div class="banner-input-group">
+                                <div class="banner-input">
+                                    <input type="text" placeholder="Enter Domain Address">
+                                    <select class="select">
+                                        <option value="com" selected>.com</option>
+                                        <option value="net">.net</option>
+                                        <option value="org">.org</option>
+                                        <option value="info">.info</option>
+                                        <option value="store">.store</option>
+                                        <option value="online">.online</option>
+                                    </select>
+                                </div>
+                                <div class="banner-suggest">
+                                    <a href="#">
+                                        <h5>.io <span>- $9.45</span></h5>
+                                    </a>
+                                    <a href="#">
+                                        <h5>.com <span>- $12.76</span></h5>
+                                    </a>
+                                    <a href="#">
+                                        <h5>.net <span>- $10.23</span></h5>
+                                    </a>
+                                    <a href="#">
+                                        <h5>.org <span>- $11.18</span></h5>
                                     </a>
                                 </div>
-                                <div class="content-holder">
-                                    <div>
-                                        <div class="entry-category style-2 color-dark-1-fixed">
-                                            <ul>
-                                                <li>
-                                                    <a href="archive-layout1.html">{{ $getSpecials->category->name }}</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <h3 class="entry-title h3-extra-large color-dark-1-fixed underline-animation">
-                                            <a href="post-format-default.html" class="link-wrap">{{ $getSpecials->headline }}</a>
-                                        </h3>
-                                        <p class="entry-description color-dark-1-fixed"></p>
-                                        <ul class="entry-meta color-dark-1-fixed">
-                                            <li class="post-author">
-                                                <a href="author.html">
-                                                    <img src="{{ asset('frontends/media/blog/profile1.webp') }}" alt="Author"> {{ $getSpecials->user->name }}
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <i class="regular-clock-circle"></i>{{ $getVideoLead->created_at->format('d M Y h:m A') }}
-                                            </li>
-                                            <li>
-                                                <i class="regular-eye"></i>9k
-                                            </li>
-                                        </ul>
-                                        <a href="post-format-default.html" class="btn-text color-dark-1-fixed">View the post<span class="icon-holder">
-                                            <i class="regular-arrow-right"></i></span>
-                                        </a>
-                                    </div>
+                            </div>
+                            <button type="submit" title="Search Domain"><i class="fas fa-search"></i><span>search</span></button>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="transfer">
+                        <form class="banner-form">
+                            <div class="banner-input-group">
+                                <div class="banner-input"><input type="text" placeholder="Enter Your Domain to Transfer"></div>
+                                <div class="banner-suggest">
+                                    <a href="#">
+                                        <h5>.io <span>- $9.45</span></h5>
+                                    </a>
+                                    <a href="#">
+                                        <h5>.com <span>- $12.76</span></h5>
+                                    </a>
+                                    <a href="#">
+                                        <h5>.net <span>- $10.23</span></h5>
+                                    </a>
+                                    <a href="#">
+                                        <h5>.org <span>- $11.18</span></h5>
+                                    </a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="tab-pane fade h-100" id="two">
-                            <div class="post-box-layout13 box-border-dark-1 radius-default padding-20 bg-color-mimosa box-shadow-large shadow-style-2 transition-default">
-                                <div class="figure-holder radius-default">
-                                    <a href="post-format-default.html" class="link-wrap img-height-100"><img width="660" height="596" src="assets/media/blog/post86.webp" alt="Post"></a>
-                                </div>
-                                <div class="content-holder">
-                                    <div>
-                                        <div class="entry-category style-2 color-dark-1-fixed">
-                                            <ul>
-                                                <li>
-                                                    <a href="archive-layout1.html">TECH</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <h3 class="entry-title h3-extra-large color-dark-1-fixed underline-animation"><a href="post-format-default.html" class="link-wrap">Air Pods Pro With Charging Case</a></h3>
-                                        <p class="entry-description color-dark-1-fixed">On August 15th, an alarming email popped up in the inbox of Diana Pearl, a New York-based news editor many aspects of men's lifestyle.</p>
-                                        <ul class="entry-meta color-dark-1-fixed">
-                                            <li class="post-author">
-                                                <a href="author.html">
-                                                    <img src="assets/media/blog/profile2.webp" alt="Author">
-                                                    Ashley Graham
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <i class="regular-clock-circle"></i>2 min read
-                                            </li>
-                                            <li>
-                                                <i class="regular-eye"></i>9k
-                                            </li>
-                                        </ul>
-                                        <a href="post-format-default.html" class="btn-text color-dark-1-fixed">View the post<span class="icon-holder"><i class="regular-arrow-right"></i></span> </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade h-100" id="three">
-                            <div class="post-box-layout13 box-border-dark-1 radius-default padding-20 bg-color-selago box-shadow-large shadow-style-2 transition-default">
-                                <div class="figure-holder radius-default">
-                                    <a href="post-format-default.html" class="link-wrap img-height-100"><img width="660" height="596" src="assets/media/blog/post87.webp" alt="Post"></a>
-                                </div>
-                                <div class="content-holder">
-                                    <div>
-                                        <div class="entry-category style-2 color-dark-1-fixed">
-                                            <ul>
-                                                <li>
-                                                    <a href="archive-layout1.html">FASHION</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <h3 class="entry-title h3-extra-large color-dark-1-fixed underline-animation"><a href="post-format-default.html" class="link-wrap">Beauty Of Deep Galaxies In Universe</a></h3>
-                                        <p class="entry-description color-dark-1-fixed">On August 15th, an alarming email popped up in the inbox of Diana Pearl, a New York-based news editor many aspects of men's lifestyle.</p>
-                                        <ul class="entry-meta color-dark-1-fixed">
-                                            <li class="post-author">
-                                                <a href="author.html">
-                                                    <img src="assets/media/blog/profile3.webp" alt="Author">
-                                                    Sergio Pliego
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <i class="regular-clock-circle"></i>2 min read
-                                            </li>
-                                            <li>
-                                                <i class="regular-eye"></i>9k
-                                            </li>
-                                        </ul>
-                                        <a href="post-format-default.html" class="btn-text color-dark-1-fixed">View the post<span class="icon-holder"><i class="regular-arrow-right"></i></span> </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade h-100" id="four">
-                            <div class="post-box-layout13 box-border-dark-1 radius-default padding-20 bg-color-old-lace box-shadow-large shadow-style-2 transition-default">
-                                <div class="figure-holder radius-default">
-                                    <a href="post-format-default.html" class="link-wrap img-height-100"><img width="660" height="596" src="assets/media/blog/post88.webp" alt="Post"></a>
-                                </div>
-                                <div class="content-holder">
-                                    <div>
-                                        <div class="entry-category style-2 color-dark-1-fixed">
-                                            <ul>
-                                                <li>
-                                                    <a href="archive-layout1.html">HEALTH</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <h3 class="entry-title h3-extra-large color-dark-1-fixed underline-animation"><a href="post-format-default.html" class="link-wrap">Underwater Exercise For All Of You</a></h3>
-                                        <p class="entry-description color-dark-1-fixed">On August 15th, an alarming email popped up in the inbox of Diana Pearl, a New York-based news editor many aspects of men's lifestyle.</p>
-                                        <ul class="entry-meta color-dark-1-fixed">
-                                            <li class="post-author">
-                                                <a href="author.html">
-                                                    <img src="assets/media/blog/profile3.webp" alt="Author">
-                                                    Kristin Watson
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <i class="regular-clock-circle"></i>2 min read
-                                            </li>
-                                            <li>
-                                                <i class="regular-eye"></i>9k
-                                            </li>
-                                        </ul>
-                                        <a href="post-format-default.html" class="btn-text color-dark-1-fixed">View the post<span class="icon-holder"><i class="regular-arrow-right"></i></span> </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                            <button type="submit" title="Transfer Domain"><i class="fas fa-random"></i><span>Transfer</span></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="banner-image">
+                    <img src="{{ asset('frontends/images/hero/01.png') }}" alt="hero">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="price-part section-mb-120">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-heading">
+                    <h2 class="section-subtitle">hosting plan</h2>
+                    <h3 class="section-title">our <span>best pricing</span></h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="nav nav-tabs plan-tabs">
+                    <li><a href="#monthly" class="tab-link active" data-bs-toggle="tab"><i class="far fa-calendar-alt"></i><span>monthly</span></a></li>
+                    <li><a href="#yearly" class="tab-link" data-bs-toggle="tab"><i class="far fa-calendar-alt"></i><span>yearly</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-pane fade show active" id="monthly">
+            <div class="price-slider slider-arrow">
+                <div class="price-card">
+                    <i class="flaticon-servers"></i>
+                    <h3>starter</h3>
+                    <p>Perfect for getting start</p>
+                    <ul>
+                        <li><span>5 addon domains</span></li>
+                        <li><span>10GB SSD Storage</span></li>
+                        <li><span>250GB Data Transfer</span></li>
+                        <li><del>unlimited sub domains</del></li>
+                        <li><del>free weekly backup</del></li>
+                        <li><span>24/7 customer care</span></li>
+                    </ul>
+                    <h4>25% discount <del>$23.74</del></h4>
+                    <h5>$35<sub>/mo</sub></h5>
+                    <h6>vat not included</h6>
+                    <a href="cartlist.html">get now</a>
+                </div>
+                <div class="price-card active">
+                    <i class="flaticon-servers"></i>
+                    <h3>popular</h3>
+                    <p>Perfect for growing sites</p>
+                    <ul>
+                        <li><span>10 addon domains</span></li>
+                        <li><span>15GB SSD Storage</span></li>
+                        <li><span>500GB Data Transfer</span></li>
+                        <li><del>unlimited sub domains</del></li>
+                        <li><span>free weekly backup</span></li>
+                        <li><span>24/7 customer care</span></li>
+                    </ul>
+                    <h4>25% discount <del>$35.62</del></h4>
+                    <h5>$49<sub>/mo</sub></h5>
+                    <h6>vat not included</h6>
+                    <a href="cartlist.html">get now</a><small>most popular</small>
+                </div>
+                <div class="price-card">
+                    <i class="flaticon-servers"></i>
+                    <h3>ultimate</h3>
+                    <p>Perfect for online stores</p>
+                    <ul>
+                        <li><span>25 addon domains</span></li>
+                        <li><span>30GB SSD Storage</span></li>
+                        <li><span>800GB Data Transfer</span></li>
+                        <li><span>unlimited sub domains</span></li>
+                        <li><span>free weekly backup</span></li>
+                        <li><span>VIP customer care</span></li>
+                    </ul>
+                    <h4>25% discount <del>$49.85</del></h4>
+                    <h5>$68<sub>/mo</sub></h5>
+                    <h6>vat not included</h6>
+                    <a href="cartlist.html">get now</a>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="yearly">
+            <div class="price-slider slider-arrow">
+                <div class="price-card">
+                    <i class="flaticon-servers"></i>
+                    <h3>starter</h3>
+                    <p>Perfect for getting start</p>
+                    <ul>
+                        <li><span>5 addon domains</span></li>
+                        <li><span>10GB SSD Storage</span></li>
+                        <li><span>250GB Data Transfer</span></li>
+                        <li><del>unlimited sub domains</del></li>
+                        <li><del>free weekly backup</del></li>
+                        <li><span>24/7 customer care</span></li>
+                    </ul>
+                    <h4>25% discount <del>$23.74</del></h4>
+                    <h5>$135<sub>/yr</sub></h5>
+                    <h6>vat not included</h6>
+                    <a href="cartlist.html">get now</a>
+                </div>
+                <div class="price-card active">
+                    <i class="flaticon-servers"></i>
+                    <h3>popular</h3>
+                    <p>Perfect for growing sites</p>
+                    <ul>
+                        <li><span>10 addon domains</span></li>
+                        <li><span>15GB SSD Storage</span></li>
+                        <li><span>500GB Data Transfer</span></li>
+                        <li><del>unlimited sub domains</del></li>
+                        <li><span>free weekly backup</span></li>
+                        <li><span>24/7 customer care</span></li>
+                    </ul>
+                    <h4>25% discount <del>$35.62</del></h4>
+                    <h5>$249<sub>/yr</sub></h5>
+                    <h6>vat not included</h6>
+                    <a href="cartlist.html">get now</a><small>most popular</small>
+                </div>
+                <div class="price-card">
+                    <i class="flaticon-servers"></i>
+                    <h3>ultimate</h3>
+                    <p>Perfect for online stores</p>
+                    <ul>
+                        <li><span>25 addon domains</span></li>
+                        <li><span>30GB SSD Storage</span></li>
+                        <li><span>800GB Data Transfer</span></li>
+                        <li><span>unlimited sub domains</span></li>
+                        <li><span>free weekly backup</span></li>
+                        <li><span>VIP customer care</span></li>
+                    </ul>
+                    <h4>25% discount <del>$49.85</del></h4>
+                    <h5>$368<sub>/yr</sub></h5>
+                    <h6>vat included</h6>
+                    <a href="cartlist.html">get now</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="price-btn">
+                    <p>Want to details or compare the above plans?</p>
+                    <a href="pricing-plan.html" class="btn btn-inline"><i class="fas fa-eye"></i><span>see here</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="feature-part section-mb-120">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-heading">
+                    <h2 class="section-subtitle">hosting feature</h2>
+                    <h3 class="section-title">our <span>top features</span></h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-lg-4">
+                <div class="feature-wrap">
+                    <div class="feature-icon"><i class="flaticon-secure"></i></div>
+                    <div class="feature-text">
+                        <h5>uptime guarantee</h5>
+                        <p>Loncidunt accusamus cum non maiores consectetur magnam eaque maxime.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="feature-wrap">
+                    <div class="feature-icon"><i class="flaticon-computer"></i></div>
+                    <div class="feature-text">
+                        <h5>secure and safety</h5>
+                        <p>Loncidunt accusamus cum non maiores consectetur magnam eaque maxime.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="feature-wrap">
+                    <div class="feature-icon"><i class="flaticon-customer-service"></i></div>
+                    <div class="feature-text">
+                        <h5>dedicated support</h5>
+                        <p>Loncidunt accusamus cum non maiores consectetur magnam eaque maxime.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="feature-wrap">
+                    <div class="feature-icon"><i class="flaticon-online-shopping"></i></div>
+                    <div class="feature-text">
+                        <h5>eCommerce Tools</h5>
+                        <p>Loncidunt accusamus cum non maiores consectetur magnam eaque maxime.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="feature-wrap">
+                    <div class="feature-icon"><i class="flaticon-refund"></i></div>
+                    <div class="feature-text">
+                        <h5>easy refund policy</h5>
+                        <p>Loncidunt accusamus cum non maiores consectetur magnam eaque maxime.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="feature-wrap">
+                    <div class="feature-icon"><i class="flaticon-key"></i></div>
+                    <div class="feature-text">
+                        <h5>cpanel access</h5>
+                        <p>Loncidunt accusamus cum non maiores consectetur magnam eaque maxime.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="feature-wrap">
+                    <div class="feature-icon"><i class="flaticon-businessmen"></i></div>
+                    <div class="feature-text">
+                        <h5>Discussion Boards</h5>
+                        <p>Loncidunt accusamus cum non maiores consectetur magnam eaque maxime.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="feature-wrap">
+                    <div class="feature-icon"><i class="flaticon-easy-installation"></i></div>
+                    <div class="feature-text">
+                        <h5>onclick installation</h5>
+                        <p>Loncidunt accusamus cum non maiores consectetur magnam eaque maxime.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="feature-wrap">
+                    <div class="feature-icon"><i class="flaticon-speedometer"></i></div>
+                    <div class="feature-text">
+                        <h5>fast speed meter</h5>
+                        <p>Loncidunt accusamus cum non maiores consectetur magnam eaque maxime.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-<!--=====================================-->
-<!--=          Post Area Start          =-->
-<!--=====================================-->
-<section class="post-wrap-layout10 space-top-25 bg-color-light-1 transition-default">
+<section class="about-part section-mb-120">
     <div class="container">
-        <div class="position-relative">
-            <div id="post-slider-5" class="post-slider-5 outer-top-5 gutter-30 initially-none">
-                @if(count($getLeads)>0)
-                @foreach ($getLeads as $getNews)
-                <div class="single-slide">
-                    <div class="post-box-layout11 box-border-dark-1 radius-default padding-20 bg-color-scandal box-shadow-large shadow-style-2 transition-default">
-                        <div class="figure-holder radius-default">
-                            <a href="post-format-default.html" class="link-wrap img-height-100">
-                                <img width="500" height="320" src="{{ asset($getNews->thumbnail) }}" alt="Post">
-                            </a>
-                        </div>
-                        <div class="content-holder">
-                            <div class="entry-category style-2 color-dark-1-fixed">
-                                <ul>
-                                    <li>
-                                        <a href="archive-layout1.html">{{ $getNews->category->name }}</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <h3 class="entry-title h3-small color-dark-1-fixed underline-animation">
-                                <a href="post-format-default.html" class="link-wrap">{{ $getNews->headline }}</a>
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-                @endforeach
-                @else
-                <p class="text-center text-danger">এখনো একোনো খবর প্রচার হয়নি! </p>
-                @endif
-            </div>
-            <ul class="slider-navigation-layout1 color-light-1 position-layout2">
-                <li id="post-prev-5" class="prev"><i class="regular-arrow-left"></i></li>
-                <li id="post-next-5" class="next"><i class="regular-arrow-right"></i></li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-<section class="post-wrap-layout12 bg-color-woodsmoke space-top-50 space-bottom-60 transition-default">
-    <div class="container">
-        <div class="section-heading heading-style-4">
-            <h2 class="title">Videos</h2>
-        </div>
-        <div class="row g-3">
+        <div class="row">
             <div class="col-lg-6">
-                <div class="post-box-layout14 box-border-light-1-fixed radius-default both-side-equal">
-                    <div class="figure-holder radius-default">
-                        <a href="https://www.youtube.com/watch?v={{ $getVideoLead->embed_code }}" aria-label="Youtube Video" class="play-btn size-large popup-youtube">
-                            <i class="solid-play"></i>
-                        <a href="post-format-default.html" class="link-wrap figure-overlay img-height-100">
-                            <img width="700" height="700" src="{{ asset($getVideoLead->thumbnail) }}" alt="Post">
-                        </a>
-                    </div>
-                    <div class="content-holder">
-                        <div class="entry-category style-2 color-dark-1-fixed">
-                            <ul>
-                                <li>
-                                    <a href="archive-layout1.html">{{ $getVideoLead->category->name }}</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <h3 class="entry-title h3-large color-light-1-fixed underline-animation">
-                            <a href="post-format-default.html" class="link-wrap">{{ $getVideoLead->headline}}</a>
-                            </h3>
-                        <ul class="entry-meta color-light-1-fixed">
-                            <li class="post-author">
-                                <a href="author.html">
-                                    <img src="{{ asset('frontends/media/blog/profile3.webp') }}" alt="Author"> {{ $getVideoLead->user->name }}
-                                </a>
-                            </li>
-                            <li>
-                                <i class="regular-clock-circle"></i>{{ $getVideoLead->created_at->format('d M Y h:m A') }}
-                                {{-- date('d-m-Y', strtotime($user->from_date)); --}}
-                            </li>
-                            <li>
-                                <i class="regular-eye"></i>9k
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <div class="about-image">
+                    <img class="company" src="{{ asset('frontends/images/about/01.jpg') }}" alt="about">
+                    <img class="people" src="{{ asset('frontends/images/about/02.jpg') }}" alt="about"></div>
             </div>
             <div class="col-lg-6">
-                <div class="row g-3">
-                    @if(count($getVideos)>0)
-                    @foreach ($getVideos as $itemVideo)
-                    <div class="col-sm-6 col-12">
-                        <div class="post-box-layout16 box-border-light-1-fixed radius-default both-side-equal">
-                            <div class="figure-holder radius-default">
-                                <a href="https://www.youtube.com/watch?v={{ $itemVideo->embed_code }}" aria-label="Youtube Video" class="play-btn size-small position-top-right popup-youtube not-animation">
-                                    <i class="solid-play"></i>
-                                </a>
-                                <a href="post-format-default.html" class="link-wrap figure-overlay img-height-100">
-                                    <img width="540" height="540" src="{{ asset($itemVideo->thumbnail) }}" alt="Post">
-                                </a>
-                            </div>
-                            <div class="content-holder">
-                                <h3 class="entry-title h3-extra-small color-light-1-fixed underline-animation">
-                                    <a href="post-format-default.html" class="link-wrap">{{ $itemVideo->headline }}</a>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    @endforeach
-                    @else
-                    <p class="text-center text-danger">এখানে কোনো ভিডিও ফিচার না!</p>
-                    @endif
+                <div class="about-content">
+                    <h2 class="section-subtitle">about domhost</h2>
+                    <h3 class="section-title"><span>Domhost believes</span>in your right ideas online.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil nemo, animi maiores saepe debitis libero necessitatibus rerum dolores ex. Nisi eveniet mollitia voluptatum. Error, accusamus repudiandae molestias excepturi beatae similique illo quo provident architecto fugiat.</p>
+                    <ul>
+                        <li>
+                            <h5>2343+</h5>
+                            <p>registered users</p>
+                        </li>
+                        <li>
+                            <h5>7685+</h5>
+                            <p>currently hosted</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-<!--=====================================-->
-<!--=         Banner Area Start         =-->
-<!--=====================================-->
-<section class="banner-wrap-layout-2 space-top-60 space-bottom-60 bg-color-light-1 transition-default">
+<section class="section-mb-120">
     <div class="container">
-        <div class="banner-box-layout2 box-border-dark-1 radius-default">
-            <div class="figure-holder radius-medium">
-                <a href="#" class="link-wrap img-height-100"><img width="1232" height="230" src="{{ asset('frontends/media/banner/banner4.webp') }}" alt="Banner"></a>
+        <div class="video-content">
+            <img src="{{ asset('frontends/images/video.jpg') }}" alt="video">
+            <a href="https://youtu.be/C4lPnr7qgwM" class="venobox" data-autoplay="true" data-vbtype="video">
+                <i class="fas fa-play"></i>
+            </a>
+        </div>
+    </div>
+</section>
+<section class="service-part section-mb-95">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-heading">
+                    <h2 class="section-subtitle">service provide</h2>
+                    <h3 class="section-title">our <span>best service</span></h3>
+                </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-sm-6 col-lg-4">
+                <div class="service-card">
+                    <i class="flaticon-web-hosting"></i>
+                    <h4>shared hosting</h4>
+                    <p>Lorem ipsum dolor sit amet elit expedita quas eos quos animi Nesciunt veniam voluptatem aliquam assumenda.</p>
+                    <a href="shared-hosting.html">know more</a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="service-card">
+                    <i class="flaticon-cloud-network"></i>
+                    <h4>cloud hosting</h4>
+                    <p>Lorem ipsum dolor sit amet elit expedita quas eos quos animi Nesciunt veniam voluptatem aliquam assumenda.</p>
+                    <a href="cloud-hosting.html">know more</a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="service-card">
+                    <i class="flaticon-vps"></i>
+                    <h4>VPS hosting</h4>
+                    <p>Lorem ipsum dolor sit amet elit expedita quas eos quos animi Nesciunt veniam voluptatem aliquam assumenda.</p>
+                    <a href="shared-hosting.html">know more</a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="service-card">
+                    <i class="flaticon-shared-folder"></i>
+                    <h4>reseller hosting</h4>
+                    <p>Lorem ipsum dolor sit amet elit expedita quas eos quos animi Nesciunt veniam voluptatem aliquam assumenda.</p>
+                    <a href="reseller-hosting.html">know more</a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="service-card">
+                    <i class="flaticon-database"></i>
+                    <h4>dedicated hosting</h4>
+                    <p>Lorem ipsum dolor sit amet elit expedita quas eos quos animi Nesciunt veniam voluptatem aliquam assumenda.</p>
+                    <a href="cloud-hosting.html">know more</a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="service-card">
+                    <i class="flaticon-domain"></i>
+                    <h4>domain name</h4>
+                    <p>Lorem ipsum dolor sit amet elit expedita quas eos quos animi Nesciunt veniam voluptatem aliquam assumenda.</p>
+                    <a href="domain-search.html">know more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="support-part section-mb-120">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-4 col-lg-5">
+                <div class="support-image">
+                    <img src="{{ asset('frontends/images/support.png') }}" alt="support">
+                </div>
+            </div>
+            <div class="col-md-8 col-lg-7">
+                <div class="support-content">
+                    <h2>why you with domhost?</h2>
+                    <p>Because we know that even the best technology is only as good as the people behind it. That’s why we offer expert, 24/7 phone support, plus a lot more.</p>
+                    <ul class="support-info">
+                        <li><span>for call</span><a href="tel:0209-4215-5596">0209-4215-5596</a></li>
+                        <li><span>for mail</span><a href="mailto:info@domhost.com">info@domhost.com</a></li>
+                    </ul>
+                    <div class="support-btn"><a href="#" class="btn btn-inline"><i class="fas fa-comments"></i><span>live chating</span></a><a href="contact.html" class="btn btn-inline"><i class="fas fa-file-signature"></i><span>contact us</span></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="info-part section-mb-120">
+    <div class="container">
+        <div class="row align-items-center section-mb-100">
+            <div class="col-sm-6 col-lg-6">
+                <div class="info-content info-left">
+                    <h2 class="section-subtitle">hosting info</h2>
+                    <h3 class="section-title">Built for speed and security.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Cupiditate quam id fuga doloribus modi libero eligendi Modi minima quaerat nihil assumenda voluptatem!</p>
+                    <a href="shared-hosting.html" class="btn btn-inline"><i class="fas fa-external-link-alt"></i><span>get started</span></a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-6">
+                <div class="info-image info-right">
+                    <img src="{{ asset('frontends/images/info/hosting.png') }}" alt="info">
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-sm-6 col-lg-6">
+                <div class="info-image info-left">
+                    <img src="{{ asset('frontends/images/info/domain.png') }}" alt="info">
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-6">
+                <div class="info-content info-right">
+                    <h2 class="section-subtitle">domain info</h2>
+                    <h3 class="section-title">Start your business with own identity.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Cupiditate quam id fuga doloribus modi libero eligendi Modi minima quaerat nihil assumenda voluptatem!</p>
+                    <a href="domain-search.html" class="btn btn-inline"><i class="fas fa-external-link-alt"></i><span>get started</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="testi-part">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-heading">
+                    <h2 class="section-subtitle">client's feedback</h2>
+                    <h3 class="section-title">our <span>testimonials</span></h3>
+                </div>
+            </div>
+        </div>
+        <div class="testi-slider slider-arrow">
+            <div class="testi-card">
+                <i class="fas fa-quote-left"></i>
+                <div class="testi-rating"><a href="#" class="fas fa-star"></a><a href="#" class="fas fa-star"></a><a href="#" class="fas fa-star"></a><a href="#" class="fas fa-star"></a><a href="#" class="fas fa-star"></a></div>
+                <p class="testi-desc">Our best-in-class WordPress solution with additio nal optiz ation to make an running a WooCommerce</p>
+                <div class="testi-user">
+                    <a href="#">
+                        <img src="{{ asset('frontends/images/avatar/01.jpg') }}" alt="avatar">
+                    </a>
+                    <h5>miron mahmud <span>Hechinger</span></h5>
+                </div>
+            </div>
+            <div class="testi-card">
+                <i class="fas fa-quote-left"></i>
+                <div class="testi-rating"><a href="#" class="fas fa-star"></a><a href="#" class="fas fa-star"></a><a href="#" class="fas fa-star"></a><a href="#" class="fas fa-star"></a><a href="#" class="fas fa-star"></a></div>
+                <p class="testi-desc">Our best-in-class WordPress solution with additio nal optiz ation to make an running a WooCommerce</p>
+                <div class="testi-user">
+                    <a href="#">
+                        <img src="{{ asset('frontends/images/avatar/02.jpg') }}" alt="avatar">
+                    </a>
+                    <h5>tahmina bonny <span>Hechinger</span></h5>
+                </div>
+            </div>
+            <div class="testi-card">
+                <i class="fas fa-quote-left"></i>
+                <div class="testi-rating"><a href="#" class="fas fa-star"></a><a href="#" class="fas fa-star"></a><a href="#" class="fas fa-star"></a><a href="#" class="fas fa-star"></a><a href="#" class="fas fa-star"></a></div>
+                <p class="testi-desc">Our best-in-class WordPress solution with additio nal optiz ation to make an running a WooCommerce</p>
+                <div class="testi-user">
+                    <a href="#">
+                        <img src="{{ asset('frontends/images/avatar/03.jpg') }}" alt="avatar">
+                    </a>
+                    <h5>jane alom <span>Hechinger</span></h5>
+                </div>
+            </div>
+            <div class="testi-card">
+                <i class="fas fa-quote-left"></i>
+                <div class="testi-rating">
+                    <a href="#" class="fas fa-star"></a>
+                    <a href="#" class="fas fa-star"></a>
+                    <a href="#" class="fas fa-star"></a>
+                    <a href="#" class="fas fa-star"></a>
+                    <a href="#" class="fas fa-star"></a>
+                </div>
+                <p class="testi-desc">Our best-in-class WordPress solution with additio nal optiz ation to make an running a WooCommerce</p>
+                <div class="testi-user">
+                    <a href="#">
+                        <img src="{{ asset('frontends/images/avatar/04.jpg') }}" alt="avatar"></a>
+                    <h5>labonno khan <span>Hechinger</span></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container section-mb-120">
+    <div class="clients-slider">
+        <a href="#">
+            <img src="{{ asset('frontends/images/client/01.png') }}" alt="client">
+        </a>
+        <a href="#">
+            <img src="{{ asset('frontends/images/client/02.png') }}" alt="client">
+        </a>
+        <a href="#">
+            <img src="{{ asset('frontends/images/client/03.png') }}" alt="client">
+        </a>
+        <a href="#">
+            <img src="{{ asset('frontends/images/client/04.png') }}" alt="client">
+        </a>
+        <a href="#">
+            <img src="{{ asset('frontends/images/client/05.png') }}" alt="client">
+        </a>
+    </div>
+</div>
+<section class="faq-part section-mb-95">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-heading">
+                    <h2 class="section-subtitle">client's faqs</h2>
+                    <h3 class="section-title">most <span>asked question</span></h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="faq-child">
+                    <div class="faq-que">
+                        <h4>How to buy a domain in cheap price?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-ans">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt enim ut aspernatur expedita nam mollitia pariatur Sequi hic nobis aperiam numquam aliquam.</p>
+                    </div>
+                </div>
+                <div class="faq-child">
+                    <div class="faq-que">
+                        <h4>How do I set up a URL redirect for a domain?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-ans">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt enim ut aspernatur expedita nam mollitia pariatur Sequi hic nobis aperiam numquam aliquam.</p>
+                    </div>
+                </div>
+                <div class="faq-child">
+                    <div class="faq-que">
+                        <h4>How does WhoisGuard work for keep secure?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-ans">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt enim ut aspernatur expedita nam mollitia pariatur Sequi hic nobis aperiam numquam aliquam.</p>
+                    </div>
+                </div>
+                <div class="faq-child">
+                    <div class="faq-que">
+                        <h4>How do I generate a CSR code?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-ans">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt enim ut aspernatur expedita nam mollitia pariatur Sequi hic nobis aperiam numquam aliquam.</p>
+                    </div>
+                </div>
+                <div class="faq-child">
+                    <div class="faq-que">
+                        <h4>How to upload file via ftp in cPanel?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-ans">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt enim ut aspernatur expedita nam mollitia pariatur Sequi hic nobis aperiam numquam aliquam.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="faq-child">
+                    <div class="faq-que">
+                        <h4>How can I change the nameservers for domain?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-ans">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt enim ut aspernatur expedita nam mollitia pariatur Sequi hic nobis aperiam numquam aliquam.</p>
+                    </div>
+                </div>
+                <div class="faq-child">
+                    <div class="faq-que">
+                        <h4>How to transfer an existing hosting account?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-ans">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt enim ut aspernatur expedita nam mollitia pariatur Sequi hic nobis aperiam numquam aliquam.</p>
+                    </div>
+                </div>
+                <div class="faq-child">
+                    <div class="faq-que">
+                        <h4>How to set up Free Email Forwarding?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-ans">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt enim ut aspernatur expedita nam mollitia pariatur Sequi hic nobis aperiam numquam aliquam.</p>
+                    </div>
+                </div>
+                <div class="faq-child">
+                    <div class="faq-que">
+                        <h4>Does Domhost provide an uptime guarantee?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-ans">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt enim ut aspernatur expedita nam mollitia pariatur Sequi hic nobis aperiam numquam aliquam.</p>
+                    </div>
+                </div>
+                <div class="faq-child">
+                    <div class="faq-que">
+                        <h4>How to add Multiple user in cPanel?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-ans">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt enim ut aspernatur expedita nam mollitia pariatur Sequi hic nobis aperiam numquam aliquam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="blog-part section-mb-120">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-heading">
+                    <h2 class="section-subtitle">domhost article</h2>
+                    <h3 class="section-title">our <span>latest blogs</span></h3>
+                </div>
+            </div>
+        </div>
+        <div class="blog-slider slider-arrow">
+            <div class="blog-card">
+                <div class="blog-media">
+                    <a href="blog-details.html">
+                        <img src="{{ asset('frontends/images/blog/01.jpg') }}" alt="blog">
+                    </a>
+                </div>
+                <div class="blog-content">
+                    <ul>
+                        <li><i class="fas fa-tags"></i><a href="#">theme plugin</a></li>
+                        <li><i class="fas fa-calendar-alt"></i><span>feb 02, 2021</span></li>
+                    </ul>
+                    <h4><a href="blog-details.html">Maiores modi pariatur alias sapiente vero tenetur</a></h4>
+                    <p>Lorem ipsum dolor amet consectetur adipisicing elit Quibusdam deleniti possimus porro <a href="blog-details.html">...read more</a></p>
+                </div>
+            </div>
+            <div class="blog-card">
+                <div class="blog-media">
+                    <a href="blog-details.html">
+                        <img src="{{ asset('frontends/images/blog/02.jpg') }}" alt="blog">
+                    </a>
+                </div>
+                <div class="blog-content">
+                    <ul>
+                        <li><i class="fas fa-tags"></i><a href="#">cloud hosting</a></li>
+                        <li><i class="fas fa-calendar-alt"></i><span>dec 26, 2020</span></li>
+                    </ul>
+                    <h4><a href="blog-details.html">Maiores modi pariatur alias sapiente vero tenetur</a></h4>
+                    <p>Lorem ipsum dolor amet consectetur adipisicing elit Quibusdam deleniti possimus porro <a href="blog-details.html">...read more</a></p>
+                </div>
+            </div>
+            <div class="blog-card">
+                <div class="blog-media">
+                    <a href="blog-details.html">
+                        <img src="{{ asset('frontends/images/blog/03.jpg') }}" alt="blog">
+                    </a>
+                </div>
+                <div class="blog-content">
+                    <ul>
+                        <li><i class="fas fa-tags"></i><a href="#">domain name</a></li>
+                        <li><i class="fas fa-calendar-alt"></i><span>jan 18, 2021</span></li>
+                    </ul>
+                    <h4><a href="blog-details.html">Maiores modi pariatur alias sapiente vero tenetur</a></h4>
+                    <p>Lorem ipsum dolor amet consectetur adipisicing elit Quibusdam deleniti possimus porro <a href="blog-details.html">...read more</a></p>
+                </div>
+            </div>
+            <div class="blog-card">
+                <div class="blog-media">
+                    <a href="blog-details.html">
+                        <img src="{{ asset('frontends/images/blog/04.jpg') }}" alt="blog">
+                    </a>
+                </div>
+                <div class="blog-content">
+                    <ul>
+                        <li><i class="fas fa-tags"></i><a href="#">Reseller hosting</a></li>
+                        <li><i class="fas fa-calendar-alt"></i><span>feb 02, 2021</span></li>
+                    </ul>
+                    <h4><a href="blog-details.html">Maiores modi pariatur alias sapiente vero tenetur</a></h4>
+                    <p>Lorem ipsum dolor amet consectetur adipisicing elit Quibusdam deleniti possimus porro <a href="blog-details.html">...read more</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="blog-btn"><a href="blog-list.html" class="btn btn-inline"><i class="fas fa-eye"></i><span>show more</span></a></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="call2action-part">
+    <div class="container">
+        <h2>want to get achieve your ideas online?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit ncidunt neque atque cum nulla temporibus cupiditate excepturi quibusdam magni beatae mollitia</p>
+        <a href="pricing-plan.html" class="btn btn-inline"><i class="fas fa-external-link-alt"></i><span>get started</span></a>
     </div>
 </section>
 @endsection

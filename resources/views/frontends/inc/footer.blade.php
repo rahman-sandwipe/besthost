@@ -1,161 +1,132 @@
-<footer class="footer footer2">
-    <div class="footer-main">
-        <div class="container">
-            <div class="row g-3">
-                <div class="col-lg-4 col-12">
-                    <div class="footer-widget">
-                        <div class="footer-about pe-lg-5">
-                            <div class="logo-holder">
-                                <a href="index.html" class="link-wrap img-height-100" aria-label="Site Logo"><img width="131" height="47" src="assets/media/logo-light.svg" alt="logo"></a>
-                            </div>
-                            <p class="description">Expert insights, industry trends, and inspiring stories that help you live and work on your own terms. Expert insights, industry trends.</p>
-                            <p class="social-label">Follow Us</p>
-                            <div class="axil-social social-layout-1 size-small gap-12">
-                                <ul>
-                                    <li class="facebook">
-                                        <a aria-label="Learn more from Facebook" target="_blank" href="https://facebook.com/">
-                                            <i class="solid-facebook2"></i>
-                                        </a>
-                                    </li>
-                                    <li class="instagram">
-                                        <a aria-label="Learn more from Instagram" target="_blank" href="https://instagram.com/">
-                                            <i class="regular-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li class="pinterest">
-                                        <a aria-label="Learn more from Pinterest" target="_blank" href="https://pinterest.com/">
-                                            <i class="solid-pinterest-01"></i>
-                                        </a>
-                                    </li>
-                                    <li class="mail-fast">
-                                        <a aria-label="Learn more from Mail fast" target="_blank" href="https://mail-fast.com/">
-                                            <i class="regular-mail-fast"></i>
-                                        </a>
-                                    </li>
-                                    <li class="youtube">
-                                        <a aria-label="Learn more from Youtube" target="_blank" href="https://youtube.com/">
-                                            <i class="solid-youtube"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+
+<footer class="footer-part">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="footer-brand">
+                    <a href="#"><img src="images/logo-white.png" alt="logo"></a>
+                    <p>Lorem ipsum dolor amet adipisicing elit quisquam quod facilis tempora unde esse maiores voluptatum asperiores pariatur adipisci soluta eos quis porro.</p>
                 </div>
-                <div class="col-lg-2 col-md-6 col-12">
-                    <div class="footer-widget">
-                        <h3 class="widget-title h3-small">About</h3>
-                        <div class="footer-menu">
-                            <ul>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="author.html">Author</a></li>
-                                <li><a href="archive-layout5.html">Culture Foram</a></li>
-                                <li><a href="archive.html">Culture Foram</a></li>
-                                <li><a href="archive.html">United Kingdom</a></li>
-                                <li><a href="archive.html">Media</a></li>
-                            </ul>
-                        </div>
-                    </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="footer-news">
+                    <h4>subscribe our newsletter</h4>
+                    <p>Don’t miss any updates of our hosting plan, themes, securities and all the astonishing offers we bring for you.</p>
+                    <form class="news-form"><input type="text" placeholder="Enter Your Email Address"><button><i class="fas fa-envelope"></i><span>subscribe</span></button></form>
                 </div>
-                <div class="col-lg-2 col-md-6 col-12">
-                    <div class="footer-widget">
-                        <h3 class="widget-title h3-small">Features</h3>
-                        <div class="footer-menu">
-                            <ul>
-                                <li><a href="archive-layout1.html">Technology</a></li>
-                                <li><a href="archive-layout2.html">Politics</a></li>
-                                <li><a href="archive-layout3.html">Middle East</a></li>
-                                <li><a href="archive-layout4.html">Culture Foram</a></li>
-                                <li><a href="archive-layout5.html">United Kingdom</a></li>
-                                <li><a href="archive-layout6.html">Features</a></li>
-                            </ul>
-                        </div>
-                    </div>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 footer-devider">
+            <div class="col">
+                <div class="footer-widget">
+                    <h5>domain</h5>
+                    <ul>
+                        <li><a href="#">domain search</a></li>
+                        <li><a href="#">domain transfer</a></li>
+                        <li><a href="#">personal domain</a></li>
+                        <li><a href="#">premium DNS</a></li>
+                        <li><a href="#">Free DNS</a></li>
+                    </ul>
                 </div>
-                <div class="col-lg-2 col-md-6 col-12">
-                    <div class="footer-widget">
-                        <h3 class="widget-title h3-small">Categories</h3>
-                        <div class="footer-menu">
-                            <ul>
-                                <li><a href="archive-layout1.html">Business Leaders</a></li>
-                                <li><a href="archive-layout2.html">Markets</a></li>
-                                <li><a href="archive-layout3.html">Australia</a></li>
-                                <li><a href="archive-layout4.html">Celebrity News</a></li>
-                                <li><a href="archive-layout5.html">Culture Foram</a></li>
-                                <li><a href="archive-layout6.html">TV News</a></li>
-                            </ul>
-                        </div>
-                    </div>
+            </div>
+            <div class="col">
+                <div class="footer-widget">
+                    <h5>hosting</h5>
+                    <ul>
+                        <li><a href="#">VPS hosting</a></li>
+                        <li><a href="#">cloud hosting</a></li>
+                        <li><a href="#">shared hosting</a></li>
+                        <li><a href="#">dedicated hosting</a></li>
+                        <li><a href="#">reseller hosting</a></li>
+                    </ul>
                 </div>
-                <div class="col-lg-2 col-md-6 col-12">
-                    <div class="footer-widget">
-                        <h3 class="widget-title h3-small">Support</h3>
-                        <div class="footer-menu">
-                            <ul>
-                                <li><a href="contact.html">Contact</a></li>
-                                <li><a href="archive-layout1.html">Music News</a></li>
-                                <li><a href="archive-layout2.html">Style News</a></li>
-                                <li><a href="archive-layout3.html">Entertainment</a></li>
-                                <li><a href="archive-layout4.html">Executive</a></li>
-                                <li><a href="404.html">404</a></li>
-                            </ul>
-                        </div>
-                    </div>
+            </div>
+            <div class="col">
+                <div class="footer-widget">
+                    <h5>support</h5>
+                    <ul>
+                        <li><a href="#">repost abuse</a></li>
+                        <li><a href="#">submit ticket</a></li>
+                        <li><a href="#">live chat</a></li>
+                        <li><a href="#">blogs</a></li>
+                        <li><a href="#">faqs</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <div class="footer-widget">
+                    <h5>terms</h5>
+                    <ul>
+                        <li><a href="#">terms of Condition</a></li>
+                        <li><a href="#">copyright notice</a></li>
+                        <li><a href="#">support system</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">easy return</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <div class="footer-widget">
+                    <h5>company</h5>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">contact form</a></li>
+                        <li><a href="#">testimonials</a></li>
+                        <li><a href="#">our partner</a></li>
+                        <li><a href="#">career</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-lg-4">
+                <div class="footer-action">
+                    <div class="action-title"><i class="far fa-check-circle"></i><span>trusted on us</span></div>
+                    <div class="action-badge"><img src="images/badge/01.png" alt="badge"><img src="images/badge/02.png" alt="badge"></div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="footer-action">
+                    <div class="action-title"><i class="fas fa-shield-alt"></i><span>SSL verified payment</span></div>
+                    <div class="action-card"><img src="images/payment/01.jpg" alt="payment"><img src="images/payment/02.jpg" alt="payment"><img src="images/payment/03.jpg" alt="payment"><img src="images/payment/04.jpg" alt="payment"><img src="images/payment/05.jpg" alt="payment"><img src="images/payment/06.jpg" alt="payment"><img src="images/payment/07.jpg" alt="payment"></div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+                <div class="footer-action">
+                    <div class="action-title"><i class="fas fa-rss"></i><span>follow our social media</span></div>
+                    <ul class="action-list">
+                        <li><a href="#" class="fab fa-facebook-f"></a></li>
+                        <li><a href="#" class="fab fa-twitter"></a></li>
+                        <li><a href="#" class="fab fa-linkedin-in"></a></li>
+                        <li><a href="#" class="fab fa-instagram"></a></li>
+                        <li><a href="#" class="fab fa-pinterest-p"></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
     <div class="footer-bottom">
         <div class="container">
-            <div class="footer-additional-info">
-                <div class="left-box">
-                    <div class="thumble-holder">
-                        <a target="_blank" href="https://www.apple.com/app-store/" class="link-wrap img-height-100"><img width="135" height="40" src="assets/media/elements/element3.webp" alt="Element"></a>
-                    </div>
-                    <div class="thumble-holder">
-                        <a target="_blank" href="https://play.google.com/store/apps" class="link-wrap img-height-100"><img width="135" height="40" src="assets/media/elements/element4.webp" alt="Element"></a>
-                    </div>
+            <p>&copy; 2021 all rights reserved by &hearts; <a href="#">mironcoder</a></p>
+            <a href="#" class="back2top-btn"><i class="fas fa-arrow-up"></i></a>
+            <div class="footer-select-group">
+                <div class="footer-select">
+                    <i class="fas fa-flag"></i>
+                    <select class="select">
+                        <option value="english" selected>english - USA</option>
+                        <option value="bangali">bangali - BD</option>
+                        <option value="arabic">arabic - SA</option>
+                    </select>
                 </div>
-                <div class="right-box">
-                    <div class="dropdown">
-                        <button class="dropdown-btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span class="flag-holder img-height-100">
-                                <img width="19" height="18" src="assets/media/elements/element5.webp" alt="Element">
-                            </span>
-                            <span class="language-name">English</span>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li>
-                                <a class="dropdown-item" href="index.html">
-                                    <span class="flag-holder img-height-100">
-                                        <img width="19" height="18" src="assets/media/elements/element5.webp" alt="Element">
-                                    </span>
-                                    <span class="language-name">English</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="index.html">
-                                    <span class="flag-holder img-height-100">
-                                        <img width="19" height="18" src="assets/media/elements/element6.webp" alt="Element">
-                                    </span>
-                                    <span class="language-name">Spanish </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="index.html">
-                                    <span class="flag-holder img-height-100">
-                                        <img width="19" height="18" src="assets/media/elements/element7.webp" alt="Element">
-                                    </span>
-                                    <span class="language-name">French</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="footer-select">
+                    <i class="fas fa-globe"></i>
+                    <select class="select">
+                        <option value="english" selected>doller - $USD</option>
+                        <option value="bangali">pound - £GBP</option>
+                        <option value="arabic">euro - €EUR</option>
+                    </select>
                 </div>
             </div>
-        </div>
-        <div class="footer-copyright">
-            <span class="copyright-text">© 2024. All rights reserved by <a href="https://morexhub.com/" target="_blank">MoreXHUB tech LMT.</a>.</span>
         </div>
     </div>
 </footer>
